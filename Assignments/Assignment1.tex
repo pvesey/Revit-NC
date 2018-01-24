@@ -4,43 +4,60 @@
 \Large\textbf{Assignment 1 (33\%) - Detached 2 Storey Residence with Dormer Window}\\
 \end{flushleft}
 
-\begin{tabular}{|l|l|}
+\begin{tabularx}{\textwidth}{ |X|X| }
+	\hline
+	\textbf{Issue Date:} & As stated on Moodle \\
 	\hline 
-	Issue Date & As per Moodle \\ 
-	\hline 
-	Submission Date & As per Moodle \\ 
-	\hline 
-\end{tabular} 
-\\
+	\textbf{Submission Date:}  & As stated on Moodle  \\
+	\hline
+\end{tabularx}
 
+
+\begin{flushleft}
 \large\textbf{Assignment Outline}\\
+\end{flushleft}
 
 You are required to model a two storey house incorporating a dormer window and to digitally submit you project file (.rvt) showing your model on one A4 sheet and three A1 sheets.
 
-\large\textbf{Your Submission should contain the following information}\\
+\begin{flushleft}
+\large\textbf{Your Submission should contain the following drawings}\\
+\end{flushleft}
 
 
-\textbf{Sheet 1:} Sheet Size - A4, Sheet No - A101, Sheet Name - Cover Sheet
+\begin{tabularx}{\textwidth}{ |c|c|X| }
+	\hline
+	\textbf{Sheet Size} & \textbf{Sheet No.} & \textbf{Title} \\
+	\hline 
+	A4  & A101 & Cover Sheet \\
+	A1  & A102 & Floor Plans \\
+	A1  & A103 & Elevations \\
+	A1  & A104 & Sections and Details \\
+	\hline
+\end{tabularx}
+
+Details of the requirements for each drawing are given below:\\
+
+\textbf{A101 - Cover Sheet}
 \begin{itemize}
 	\item Three Dimensional (Aerial View) of the model (scaled to suit the sheet size) Shaded
 	\item A list of the drawings in the design pack
 \end{itemize}
 
 
-\textbf{Sheet 2:} Sheet Size - A1, Sheet No - A102, Sheet Name - Floor Plans
+\textbf{A102 - Floor Plans}
 \begin{itemize}
 	\item Ground and First Floor Plans @ 1:50 with dimensions, Room Titles ans some fixed furniture
 	\item Two internal camera views, (scaled to suit the sheet size) rendered using the Autodesk 360 cloud rendering service.  \textit{One of the fireplace and one of the kitchen units} 
 \end{itemize}
 
 
-\textbf{Sheet 3:} Sheet Size - A1, Sheet No - A103, Sheet Name - Elevations
+\textbf{A103 - Elevations}
 \begin{itemize}
 	\item South Elevation @ 1:50
 	\item North, East and West Elevations @ 1:100
 \end{itemize}
 
-\textbf{Sheet 4:} Sheet Size - A1, Sheet No - A102, Sheet Name - Sections and Details
+\textbf{A104 - Sections and Details}
 \begin{itemize}
 	\item Three sections are required
 	\item Section thro' Kitchen / Sitting Room facing East (towards fireplace) @ 1:100
@@ -56,9 +73,14 @@ You are required to model a two storey house incorporating a dormer window and t
 
 Additional Sheets may be submitted if so desired.
 
+
+\begin{flushleft}
 \large\textbf{Presentation and Submission}\\
+\end{flushleft}
+
+
 \begin{enumerate}
-	\item All drawing sheets must have the LIT Built Environment logo and be clearly marked 'Educational Exercise - Not for Construction
+	\item All drawing sheets must have the LIT Built Environment logo and be clearly marked 'Educational Exercise - Not for Construction'
 	\item You are required to submit you project as a single Revit (.rvt) file through Moodle
 	\item Drawings should show all necessary information to communicate design intent
 	\item The Revit filename should be of the form \textit{Semester  + Year + Project No. + First Initial + Surname + K-Number}. An example would be \textbf{'Spring18P01PVeseyK00123456.rvt'}.  Do not use spaces in the filename
@@ -114,7 +136,7 @@ The following design may be used as a guide.  You may modify the proportions pro
 \end{figure}
 
 
-
+\newpage
 \begin{flushleft}
 	\Large\textbf{Construction Specification}\\
 \end{flushleft}
@@ -125,7 +147,7 @@ External walls are to be twin leaf cavity construction and be of a 4 part Stacke
 Wall-Ext-Stacked\_317 (4-Part-Dom) with the following layers
 
 \begin{enumerate}
-	\item L1\_Wall-Ext-CAv\_102Bwk-50Air-65Ins-100DBlk-15Rnd\&P (Gen Dom)
+	\item L1\_Wall-Ext-Cav\_102Bwk-50Air-65Ins-100DBlk-15Rnd\&P (Gen Dom)
 	\begin{itemize}
 		\item Layer 1 (TopLayer) 'Variable'
 		\item (315mm wide insulated Cavity Walls over DPC level - Generally)
@@ -168,20 +190,41 @@ Foundations (Footings)
 
 \textbf{Internal Wall Specification}
 
-Ground Floor Internal Walls
-Generally, Single leaf 100mm concrete block walls 15mm render / plaster both sides
-(Wall-Part\_15Rnd\&P-100Blk-15Rnd\&P)
+\begin{itemize}
+	\item Ground Floor Internal Walls
+		\begin{itemize}
+			\item Generally, Single leaf 100mm concrete block walls 15mm render / plaster both sides, (Wall-Part\_15Rnd\&P-100Blk-15Rnd\&P)
+		\end{itemize}
+	\item First Floor Internal Walls
+		\begin{itemize}
+			\item Landing Area: Single leaf 100mm concrete block walls, 15mm render / plaster both sides (Wall-Part\_15Rnd\&P-100Blk-15Rnd\&P)
+			\item Elsewhere: 100mm timber stud partition, 15mm plaster slab / plaster both sides (Wall-Stud-Part\_15Gwb\&P-100Stud-15Gwb\&P) 
+		\end{itemize} 
+\end{itemize}
 
-First Floor Internal Walls 
-Landing Area
-Single leaf 100mm concrete block walls, 15mm render / plaster both sides
-(Wall-Part\_15Rnd\&P-100Blk-15Rnd\&P)
-Elsewhere
-100mm timber stud partition, 15mm plaster slab / plaster both sides
-(Wall-Stud-Part\_15Gwb\&P-100Stud-15Gwb\&P)
 
 
 \textbf{Floor Specification}
+
+
+\begin{itemize}
+	\item Ground Floor: Revit Library modified floor type (Floor-Grnd-Bearing) to be duplicated and used(Floor-Grnd-Bearing\_65Scr-100Ins-150Conc-DPM-50SBld-200Hcore)
+	\begin{itemize}
+		\item 65mm Sand \& Cement Screed on
+		\item 100mm Floor Insulation on
+		\item 150mm Reinforced Concrete Slab on
+		\item Damp Proof Membrane on
+		\item 50mm Sand Blinding on 
+		\item 200mm Selected and Graded Hardcore laid in 2 No. 100mm layers
+	\end{itemize}
+	\item First Floor: Revit Library modified floor type (Floor\_Timber\_25Cbd-225Joist) may be used: Finished First Floor Level to be 2750mm (GFL to FFL)
+
+\end{itemize}
+
+
+
+
+
 
 
 
@@ -238,31 +281,29 @@ Elsewhere
 
 \textbf{Roof Construction Specification}
 \begin{itemize}
-	\item Revit Library roof type 'Roof\_Pitched\_38Tile-25Bat-0Felt-25Bat-100Ins-150Truss-12PBd to be modified as follows: Roof\_Pitched\_38Tile-38Bat-0Feld-150Truss. ie 38mm Roofing Tile on 38mm battens on Roof Membrane on 150mm Structure (Truss / Rafter)
+	\item Revit Library roof type 'Roof\_Pitched\_38Tile-25Bat-0Felt-25Bat-100Ins-150Truss-12PBd to be modified as follows: Roof\_Pitched\_38Tile-38Bat-0Feld-150Truss.
+	\begin{itemize}
+		\item 38mm Roofing Tile on 
+		\item 38mm battens on 
+		\item Roof Membrane on 
+		\item 150mm Structure (Truss / Rafter)
+	\end{itemize}
 \end{itemize}
 
 
 
 
-\textbf{Provide the Following}
+\textbf{General Building}\\
+Provide the following
 \begin{itemize}
 	\item Facia Boards, Flat Soffits, Rainwater Gutters, Downpipes and all necessary information to communicate design intent.
 \end{itemize}
 
 
-
-
-
 \textbf{Site}
-
-
-
-
-\input{FileSetup.tex}
-
-\input{LateSubmission.tex}
-
-
+\begin{itemize}
+	\item A basic flat topographical layer (Toposurface) is to be inserted in the Site View.  The toposurface be created at an elevation of -225mm
+\end{itemize}
 
 
 \end{document}
