@@ -49,7 +49,6 @@ Temporary Items
 <<<<<<< HEAD
 
 # Files that are not necessary for repo
-*.pdf
 *.aux
 *.out
 *.snm
