@@ -1,0 +1,167 @@
+\input{HeadMatter.tex}
+	
+\part*{Assignment 4 – Miscellaneous Tasks}
+
+\begin{tabularx}{\textwidth}{ |X|X| }
+	\hline
+	\textbf{Issue Date:} & 29$^{th}$ January 2019 \\
+	\hline 
+	\textbf{Submission Date:}  & As stated on Moodle  \\
+	\hline
+\end{tabularx}
+
+\section*{Continuous Assessment Marks}
+This assignment will account for 25\% of the 100\% allocated for continuous assessment in this module
+
+\section*{Assignment Outline}
+This assignment involves 5 parts, each representing 20\% of the overall assignment. During the completion of this assignment you will create multiple Revit project files and multiple Revit Family parts.
+
+
+The asset pack for this assignment contains the following items:
+\begin{enumerate}
+	\item LIT Title-block
+	\item Revit Architectural Model
+	\item Furniture Images captured from Revit
+\end{enumerate}
+
+
+\section*{Submission}
+All files should be kept in a single folder entitled ‘Assignment4’. Once you have completed the assignment, you should zip this folder into a single archive and upload to Moodle. Upload this single zip file to Moodle on or before the submission deadline.
+
+
+\newpage
+
+\section*{Part 1- Fan Coil Unit}
+This section involves the creation of a simple fan coil unit Revit family. The family part will have an electrical connection, two duct connections, and two hydronic connections as shown in the table below. The geometry is a simple box shape with the connections applied to three reference planes in the configuration shown. You should use the ‘Metric Mechanical Equipment’ family template to create this part. Do not use either of the hosted templates available in Revit.  Your completed Revit Family should be named \textbf{‘FanCoilPart1.rfa’} and included in your submission folder.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Fan Coil Unit}
+	\label{fig:fanCoilUnit}
+\end{figure}
+
+
+
+
+\begin{tabularx}{\textwidth}{ |c|X|c| }
+	\hline
+	\textbf{No.} & \textbf{Item} & \textbf{Details}\\
+	\hline 
+	1 & Length & 600 mm \\
+	2 & Width & 400 mm \\
+	3 & Height & 300 mm \\
+	4 & Hydronic Supply & \diameter25 mm \\
+	5 & Hydronic Return & \diameter25 mm \\
+	6 & Single Pole Elec & 230V, PF 1.0, 600 VA \\
+	7 & Duct In (Other Air) & 150 mm x 150 mm \\
+	8 & Duct Out (Supply Air) & \diameter150 \\
+	\hline
+\end{tabularx}
+
+
+\newpage
+
+
+\section*{Part 2 Generic Family Part}
+In this section you are going to create a simple box shape with adjustable height, length and width. Once this is created you are going to create 3 types of the family and insert an instance of each into a Revit project. The family part should have three (3) reference planes named ‘Length’, ‘Width’ and ‘Height’. The family types should have the dimensions as shown in the table below.  Your completed Revit Family should be named \textbf{‘ParaBoxPart2.rfa’} and included in your submission folder.  Your completed Revit Project should be named ‘Part2.rvt’ and included in your submission folder.\\
+
+
+\begin{tabularx}{\textwidth}{ |X|c|c|c| }
+	\hline
+	\textbf{Type Name} & Length & Width & Height \\
+	\hline 
+	Primo & 500 & 400 & 150\\
+	Medio & 750 & 600 & 250\\
+	Massimo & 1000 & 700 & 400\\
+	\hline
+\end{tabularx}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Generic Family Part}
+	\label{fig:GenericFamilyPart}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Generic Family Part}
+	\label{fig:GenericFamilyPart}
+\end{figure}
+
+\newpage
+
+\section*{Part 3 – Auto generate Duct and Pipe Layouts}
+Revit includes auto routing functionality for ducts and pipe. In this section you will create four (4) auto-routed duct layouts and two pipe layouts as shown below. Use the Revit Mechanical Template file to create your project. Your completed project file should be named \textbf{‘Part3.rvt’} and included in your submission folder.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Revit Auto-routed Duct Layouts}
+	\label{fig:AutorouteDuct}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Revit Auto-routed Pipe Layouts}
+	\label{fig:AutoroutePipe}
+\end{figure}
+
+
+\newpage
+
+\section*{Part 4 (a) – Schedules with Images}
+In this section you will create a furniture schedule that includes an image of the furniture item next to its information. You will use the architectural model provided for this section. Images to associate with each part have been provided in the asset pack for this assignment. You will need to apply the appropriate image to the Type Image parameter in the family editor. The completed table should be place on a Sheet view in the project file. Use the Save As function to create a new Revit project entitled \textbf{‘Part4a.rvt’} and include this file in your assignment submission folder.
+Revit Schedule with Images
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Revit Schedule with Images}
+	\label{fig:ScheduleWithImages}
+\end{figure}
+
+
+
+
+
+\section*{Part 4 (b) – Creating a Legend}
+In this section you will create a 1:50 legend for the furniture in the architectural model provided in the asset pack. The headings are set to 5mm and the descriptions are set to 3.5mm. Unlike schedules, legends can be placed in multiple views, however there are some limitations. You are also required to add some simple dimensions to the images as shown below. Use the 'Save As' function to create a new Revit project entitled \textbf{‘Part4b.rvt’} and include this file in your assignment submission folder.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Revit Legend with Images}
+	\label{fig:RevitLegend}
+\end{figure}
+
+
+\newpage
+
+\section*{Part 5 – Fabrication Parts}
+In this section you will use the fabrication parts functionality in Revit to create the simple duct layout below. Create a new Revit project using the Mechanical template. Save your project file as \textbf{‘Part5.rvt’} and include it in your assignment submission.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Duct Layout using Fabrication Parts}
+	\label{fig:FabParts}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/House}
+	\caption{Duct Layout using Fabrication Parts (Reverse Angle)}
+	\label{fig:FabPartsReverse}
+\end{figure}
+
+
+\end{document}
