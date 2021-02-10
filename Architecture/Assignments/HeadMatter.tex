@@ -1,13 +1,13 @@
 \documentclass[a4paper, 10pt]{article}
-\usepackage{fontspec}
-\setmainfont{Lato}
+%\usepackage{fontspec}
+%\setmainfont{Lato}
 \usepackage{pgf}
 \usepackage{eurosym}
 \usepackage{graphicx}
 \usepackage{wasysym}
 \usepackage{hyperref}
 \usepackage{listings}
-%\usepackage{pxfonts}
+\usepackage{pxfonts}
 \usepackage{verbatim}
 \usepackage{color}
 \usepackage{xcolor}
@@ -16,6 +16,7 @@
 \usepackage{booktabs}
 \usepackage{gensymb}
 \usepackage{tabularx}
+\usepackage{currfile}
 
 \hypersetup{
     bookmarks=true,         % show bookmarks bar?
@@ -49,24 +50,21 @@
         aboveskip=-20pt,
         frame=leftline
         }
-				
-\begin{table}%
-	\begin{minipage}{0.4\textwidth}%
-			\includegraphics[width=1\textwidth]{img/LITlogo.jpg}
-	\end{minipage}
-	\qquad
+
+
+\begin{figure}
 	\centering
-	\parbox{0.4\textwidth}{
-		\begin{large}			
-			\begin{tabular}{| r | l |} \hline
-				Subject: & \textbf{Building Information Modelling}\\
-								 & \textbf{with Revit Architecture}\\
-				Course: & \textbf{Revit Online}\\
-				Session: & \textbf{Autumn 2020}\\
-				Lecturer: & \textbf{Paul Vesey \footnotesize{BEng, MIE, HDip}}\\
-				\hline
-			\end{tabular}
-		\end{large}			
-	}
-\end{table}
-\vspace{0.25cm}	
+	\includegraphics[width=0.5\linewidth]{./img/LITlogo}
+\end{figure}
+
+
+\begin{tabularx}{\textwidth}{ |l|X| }
+	\hline
+	
+	Subject: & \textbf{Building Information Modelling with Revit Architecture}\\
+	Course: & \textbf{Revit Architecture Online}\\
+	Session: & \textbf{Spring 2021}\\
+	Lecturer: & \textbf{Paul Vesey \footnotesize{BEng, MIE, HDip}}\\
+	Filename: & \currfilebase\\
+	\hline
+\end{tabularx}
