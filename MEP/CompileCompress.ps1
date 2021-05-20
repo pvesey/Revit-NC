@@ -59,24 +59,24 @@ Remove-Item RMEP03-LIT-00-ZZ-SP-M-001-A1-P02.out
 Move-Item -Path .\RMEP03-LIT-00-ZZ-SP-M-001-A1-P02.pdf -Destination .\Assignment-3-Pack\RMEP03-LIT-00-ZZ-SP-M-001-A1-P02.pdf -Force
 
 
-xelatex .\Assignments\RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.tex
+pdflatex .\Assignments\RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.tex
 Remove-Item RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.aux
 Remove-Item RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.log
 Remove-Item RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.out
 Move-Item -Path .\RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.pdf -Destination .\Assignment-4-Pack\RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.pdf -Force
 
 Remove-Item RMEP01-LIT-00-ZZ-IE-E-001-A1-P02.zip
-Remove-Item RMEP02-LIT-00-ZZ-IE-H-001-A1-P01.zip
-Remove-Item RMEP03-LIT-00-ZZ-IE-M-001-A1-P01.zip
-Remove-Item RMEP04-LIT-00-ZZ-IE-Y-001-A1-P01.zip
+Remove-Item RMEP02-LIT-00-ZZ-IE-H-001-A1-P02.zip
+Remove-Item RMEP03-LIT-00-ZZ-IE-M-001-A1-P02.zip
+Remove-Item RMEP04-LIT-00-ZZ-IE-Y-001-A1-P02.zip
 
 Compress-Archive .\Assignment-1-Pack\ RMEP01-LIT-00-ZZ-IE-E-001-A1-P02.zip -Update
 
-Compress-Archive .\Assignment-2-Pack\ RMEP02-LIT-00-ZZ-IE-H-001-A1-P01.zip -Update
+Compress-Archive .\Assignment-2-Pack\ RMEP02-LIT-00-ZZ-IE-H-001-A1-P02.zip -Update
 
-Compress-Archive .\Assignment-3-Pack\ RMEP03-LIT-00-ZZ-IE-M-001-A1-P01.zip -Update
+Compress-Archive .\Assignment-3-Pack\ RMEP03-LIT-00-ZZ-IE-M-001-A1-P02.zip -Update
 
-Compress-Archive .\Assignment-4-Pack\ RMEP04-LIT-00-ZZ-IE-Y-001-A1-P01.zip -Update
+Compress-Archive .\Assignment-4-Pack\ RMEP04-LIT-00-ZZ-IE-Y-001-A1-P02.zip -Update
 
 
 
