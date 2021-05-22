@@ -1,18 +1,20 @@
-$RSTR01 = [PSCustomObject]@{
+$Assignment1 = [PSCustomObject]@{
     Name = 'RSTR01-LIT-00-ZZ-SP-A-001-A1-P02'
+    Spec = './Assignments/RSTR01-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    HomeDir = './RSTR01/'
     Archive = 'RSTR01-LIT-00-ZZ-IE-A-001-A1-P02.zip'
-
+    Dwg1Out = '.\Assets\RSTR01\RMEP01-E-101-A1-.pdf'
 }
 
 
-Write-Host $RSTR01.Name
+Write-Host $Assignment1.Name
 
 
 
 
 
 # Cleanout folders
-#Remove-Item .\RARC01\*.*
+#Remove-Item $Assignment1.HomeDir + '*.*'
 #Remove-Item .\RARC02\*.*
 #Remove-Item .\RARC03\*.*
 #
@@ -49,50 +51,25 @@ Write-Host $RSTR01.Name
 
 # Compile Latex Files
 
-#$RARC01 = "RARC01-LIT-00-ZZ-SP-A-001-A1-P02"
-#$RARC01Archive = "RARC01-LIT-00-ZZ-IE-A-001-A1-P02.zip"
 
-#$RARC02 = "RARC02-LIT-00-ZZ-SP-A-001-A1-P02"
-#$RARC02Archive = "RARC02-LIT-00-ZZ-IE-A-001-A1-P02.zip"
-
-#$RARC03 = "RARC03-LIT-00-ZZ-SP-A-001-A1-P02"
-#$RARC03Archive = "RARC03-LIT-00-ZZ-IE-A-001-A1-P02.zip"
+#pdflatex (".\Assignments\" + $Assignment1.Name + ".tex")
+#Remove-Item ($Assignment1.Name + ".aux")
+#Remove-Item ($Assignment1.Name + ".log")
+#Remove-Item ($Assignment1.Name + ".out")
+#Move-Item -Path ("./" + $Assignment1.Name + ".pdf") -Destination ($Assignment1.HomeDir + $Assignment1.Name + ".pdf") -Force
 
 
 
 
-#pdflatex (".\Assignments\" + $RARC01 + ".tex")
-#Remove-Item ($RARC01 + ".aux")
-#Remove-Item ($RARC01 + ".log")
-#Remove-Item ($RARC01 + ".out")
-#Move-Item -Path ("./" + $RARC01 + ".pdf") -Destination ("./RARC01/" + $RARC01 + ".pdf") -Force
-
-
-#pdflatex (".\Assignments\" + $RARC02 + ".tex")
-#Remove-Item ($RARC02 + ".aux")
-#Remove-Item ($RARC02 + ".log")
-#Remove-Item ($RARC02 + ".out")
-#Move-Item -Path ("./" + $RARC02 + ".pdf") -Destination ("./RARC02/" + $RARC02 + ".pdf") -Force
-
-
-#pdflatex (".\Assignments\" + $RARC03 + ".tex")
-#Remove-Item ($RARC03 + ".aux")
-#Remove-Item ($RARC03 + ".log")
-#Remove-Item ($RARC03 + ".out")
-#Move-Item -Path ("./" + $RARC03 + ".pdf") -Destination ("./RARC03/" + $RARC03 + ".pdf") -Force
-
-
-#Remove-Item $RARC01Archive
-#Remove-Item $RARC02Archive
-#Remove-Item $RARC03Archive
+#Remove-Item $Assignment1.Archive
+#Remove-Item $Assignment2.Archive
+#Remove-Item $Assignment3.Archive
 
 #
-#Compress-Archive .\RARC01\ $RARC01Archive -Update
+#Compress-Archive $Assignment1.HomeDir $Assignment1.Archive -Update
+#Compress-Archive $Assignment2.HomeDir $Assignment2.Archive -Update
+#Compress-Archive $Assignment3.HomeDir $Assignment3.Archive -Update
 #
-#Compress-Archive .\RARC02\ $RARC02Archive -Update
-#
-#Compress-Archive .\RARC03\ $RARC03Archive -Update
-
 
 Write-Host -NoNewLine 'Script Complete: Press any key to continue...';
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
