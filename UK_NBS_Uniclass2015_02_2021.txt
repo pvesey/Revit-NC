@@ -76,7 +76,7 @@ Ac_10_30_15	Constructed material clearance	Ac_10_30
 Ac_10_30_80	Soil removal	Ac_10_30
 Ac_10_30_90	Tree removal	Ac_10_30
 Ac_10_40	Construction	Ac_10
-Ac_10_40_08	Bricklaying	Ac_10_40
+Ac_10_40_08	Bricklaying	Ac_10_40	
 Ac_10_40_11	Carpentry and joinery	Ac_10_40
 Ac_10_40_13	Carpet laying	Ac_10_40
 Ac_10_40_22	Diamond drilling	Ac_10_40
