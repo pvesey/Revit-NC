@@ -1,84 +1,127 @@
+$Assignment1 = [PSCustomObject]@{
+    Name = 'RARC01-LIT-00-ZZ-SP-A-001-A1-P02'
+    Spec = './Assignments/RARC01-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    HomeDir = './RARC01/'
+    Archive = 'RARC01-LIT-00-ZZ-IE-A-001-A1-P02.zip'
+    Dwg1Out = 'RARC01/RARC01-A-001-A1-.pdf'
+    Dwg1 = 'RARC01-LIT-00-ZZ-DR-A-001-A1-P02.pdf'
+    Dwg2Out = 'RARC01/RARC01-A-002-A1-.pdf'
+    Dwg2 = 'RARC01-LIT-00-ZZ-DR-A-002-A1-P02.pdf'
+    Dwg3Out = 'RARC01/RARC01-A-003-A1-.pdf'
+    Dwg3 = 'RARC01-LIT-00-ZZ-DR-A-003-A1-P02.pdf'
+    Dwg4Out = 'RARC01/RARC01-A-004-A1-.pdf'
+    Dwg4 = 'RARC01-LIT-00-ZZ-DR-A-004-A1-P02.pdf'
+    Dwg5Out = 'RARC01/RARC01-A-005-A1-.pdf'
+    Dwg5 = 'RARC01-LIT-00-ZZ-DR-A-005-A1-P02.pdf'
+}
+
+$Assignment2 = [PSCustomObject]@{
+    Name = 'RARC02-LIT-00-ZZ-SP-A-001-A1-P02'
+    Spec = './Assignments/RARC02-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    HomeDir = './RARC02/'
+    Archive = 'RARC02-LIT-00-ZZ-IE-A-001-A1-P02.zip'
+    Dwg1Out = 'RARC02/RARC02-A-201-A1-.pdf'
+    Dwg1 = 'RARC02-LIT-00-ZZ-DR-A-201-A1-P02.pdf'
+    Dwg2Out = 'RARC02/RARC02-A-202-A1-.pdf'
+    Dwg2 = 'RARC02-LIT-00-ZZ-DR-A-202-A1-P02.pdf'
+    Dwg3Out = 'RARC02/RARC02-A-203-A1-.pdf'
+    Dwg3 = 'RARC02-LIT-00-ZZ-DR-A-203-A1-P02.pdf'
+    Dwg4Out = 'RARC02/RARC02-A-204-A1-.pdf'
+    Dwg4 = 'RARC02-LIT-00-ZZ-DR-A-204-A1-P02.pdf'
+    Dwg5Out = 'RARC02/RARC02-A-205-A1-.pdf'
+    Dwg5 = 'RARC02-LIT-00-ZZ-DR-A-205-A1-P02.pdf'
+    Dwg6Out = 'RARC02/RARC02-A-206-A1-.pdf'
+    Dwg6 = 'RARC02-LIT-00-ZZ-DR-A-206-A1-P02.pdf'
+}
+
+
+
+$Assignment3 = [PSCustomObject]@{
+    Name = 'RARC03-LIT-00-ZZ-SP-A-001-A1-P02'
+    Spec = './Assignments/RARC03-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    HomeDir = './RARC03/'
+    Archive = 'RARC03-LIT-00-ZZ-IE-A-001-A1-P02.zip'
+    Dwg1Out = 'RARC03/RARC03-M-101-A1-.pdf'
+    Dwg1 = 'RARC03-LIT-00-ZZ-DR-A-101-A1-P02.pdf'
+    Dwg2Out = 'RARC03/RARC03-A-103-A1-.pdf'
+    Dwg2 = 'RARC03-LIT-00-ZZ-DR-A-103-A1-P02.pdf'
+    Dwg3Out = 'RARC03/RARC03-A-103-A1-.pdf'
+    Dwg3 = 'RARC03-LIT-00-ZZ-DR-A-103-A1-P02.pdf'
+}
+
+
+$AssetLocation = './Assets/'
+$Sheet = 'LIT-A1-Metric-Arch.rfa'
+
 # Cleanout folders
-#Remove-Item .\RARC01\*.*
-#Remove-Item .\RARC02\*.*
-#Remove-Item .\RARC03\*.*
-#
-#
+Remove-Item ($Assignment1.HomeDir + '*.*')
+Remove-Item ($Assignment2.HomeDir + '*.*')
+Remove-Item ($Assignment3.HomeDir + '*.*')
+Write-Host 'HomeDir Cleanout'
+
 # Copy Items to Pack Folders
 
-Copy-Item .\Assets\LIT-A1-Metric-Arch.rfa .\RARC01\LIT-A1-Metric-Arch.rfa -Force
-Copy-Item .\Assets\LIT-A1-Metric-Arch.rfa .\RARC02\LIT-A1-Metric-Arch.rfa -Force
-Copy-Item .\Assets\LIT-A1-Metric-Arch.rfa .\RARC03\LIT-A1-Metric-Arch.rfa -Force
+Copy-Item ($AssetLocation + $Sheet) ($Assignment1.HomeDir + $Sheet) -Force
+Copy-Item ($AssetLocation + $Sheet) ($Assignment2.HomeDir + $Sheet) -Force
+Copy-Item ($AssetLocation + $Sheet) ($Assignment3.HomeDir + $Sheet) -Force
+Copy-Item ($AssetLocation + $Sheet) ($Assignment4.HomeDir + $Sheet) -Force
+Write-Host 'A1 Sheet Copied to Packs'
 
-#Write-Host 'A1 Sheet Copied to Packs'
-#
-#Copy-Item .\Assets\RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt .\RARC01\RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt -Force
-#Copy-Item .\Assets\RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt .\RARC02\RMEP02-LIT-00-ZZ-M3-A-001-A1-P02.rvt -Force
-#Copy-Item .\Assets\RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt .\RARC03\RMEP03-LIT-00-ZZ-M3-A-001-A1-P02.rvt -Force
+Copy-Item ($AssetLocation + $Assignment1.Dwg1Out) ($Assignment1.HomeDir + $Assignment1.Dwg1) -Force
+Copy-Item ($AssetLocation + $Assignment1.Dwg2Out) ($Assignment1.HomeDir + $Assignment1.Dwg2) -Force
+Copy-Item ($AssetLocation + $Assignment1.Dwg3Out) ($Assignment1.HomeDir + $Assignment1.Dwg3) -Force
+Copy-Item ($AssetLocation + $Assignment1.Dwg4Out) ($Assignment1.HomeDir + $Assignment1.Dwg4) -Force
+Copy-Item ($AssetLocation + $Assignment1.Dwg5Out) ($Assignment1.HomeDir + $Assignment1.Dwg5) -Force
+Write-Host 'RARC01 Drawings Copied'
 
-#Write-Host 'Arch Model Copied to Packs'
-#
-#Copy-Item .\Assets\RMEP01\RMEP01-E-101-A1-.pdf .\Assignment-1-Pack\RMEP01-LIT-00-ZZ-DR-E-101-A1-P02.pdf -Force
-#Write-Host 'RMEP01 Drawings Copied'
-#
-#Copy-Item .\Assets\RMEP02\RMEP02-H-101-A1-.pdf .\Assignment-2-Pack\RMEP02-LIT-00-ZZ-DR-H-101-A1-P02.pdf -Force
-#Copy-Item .\Assets\RMEP02\RMEP02-H-102-A1-.pdf .\Assignment-2-Pack\RMEP02-LIT-00-ZZ-DR-H-102-A1-P02.pdf -Force
-#Copy-Item .\Assets\RMEP02\RMEP02-H-103-A1-.pdf .\Assignment-2-Pack\RMEP02-LIT-00-ZZ-DR-H-103-A1-P02.pdf -Force
-#Copy-Item .\Assets\RMEP02\RMEP02-H-104-A1-.pdf .\Assignment-2-Pack\RMEP02-LIT-00-ZZ-DR-H-104-A1-P02.pdf -Force
-#Write-Host 'RMEP02 Drawings Copied'
-#
-#
-#Copy-Item .\Assets\RMEP03\RMEP03-M-101-A1-.pdf .\Assignment-3-Pack\RMEP03-LIT-00-ZZ-DR-M-101-A1-P02.pdf -Force
-#Copy-Item .\Assets\RMEP03\RMEP03-M-102-A1-.pdf .\Assignment-3-Pack\RMEP03-LIT-00-ZZ-DR-M-102-A1-P02.pdf -Force
-#Copy-Item .\Assets\RMEP03\RMEP03-M-103-A1-.pdf .\Assignment-3-Pack\RMEP03-LIT-00-ZZ-DR-M-103-A1-P02.pdf -Force
-#Write-Host 'RMEP03 Drawings Copied'
+Copy-Item ($AssetLocation + $Assignment2.Dwg1Out) ($Assignment2.HomeDir + $Assignment2.Dwg1) -Force
+Copy-Item ($AssetLocation + $Assignment2.Dwg2Out) ($Assignment2.HomeDir + $Assignment2.Dwg2) -Force
+Copy-Item ($AssetLocation + $Assignment2.Dwg3Out) ($Assignment2.HomeDir + $Assignment2.Dwg3) -Force
+Copy-Item ($AssetLocation + $Assignment2.Dwg4Out) ($Assignment2.HomeDir + $Assignment2.Dwg4) -Force
+Copy-Item ($AssetLocation + $Assignment2.Dwg5Out) ($Assignment2.HomeDir + $Assignment2.Dwg5) -Force
+Copy-Item ($AssetLocation + $Assignment2.Dwg6Out) ($Assignment2.HomeDir + $Assignment2.Dwg6) -Force
+Write-Host 'RARC02 Drawings Copied'
+
+
+Copy-Item ($AssetLocation + $Assignment3.Dwg1Out) ($Assignment3.HomeDir + $Assignment3.Dwg1) -Force
+Copy-Item ($AssetLocation + $Assignment3.Dwg2Out) ($Assignment3.HomeDir + $Assignment3.Dwg2) -Force
+Copy-Item ($AssetLocation + $Assignment3.Dwg3Out) ($Assignment3.HomeDir + $Assignment3.Dwg3) -Force
+Write-Host 'RARC03 Drawings Copied'
+
 
 
 # Compile Latex Files
 
-$RARC01 = "RARC01-LIT-00-ZZ-SP-A-001-A1-P02"
-$RARC01Archive = "RARC01-LIT-00-ZZ-IE-A-001-A1-P02.zip"
 
-$RARC02 = "RARC02-LIT-00-ZZ-SP-A-001-A1-P02"
-$RARC02Archive = "RARC02-LIT-00-ZZ-IE-A-001-A1-P02.zip"
+pdflatex $Assignment1.Spec
+Remove-Item ($Assignment1.Name + '.aux')
+Remove-Item ($Assignment1.Name + '.log')
+Remove-Item ($Assignment1.Name + '.out')
+Move-Item -Path ($Assignment1.Name + '.pdf') -Destination ($Assignment1.HomeDir + $Assignment1.Name + '.pdf') -Force
 
-$RARC03 = "RARC03-LIT-00-ZZ-SP-A-001-A1-P02"
-$RARC03Archive = "RARC03-LIT-00-ZZ-IE-A-001-A1-P02.zip"
-
-
-
-
-pdflatex (".\Assignments\" + $RARC01 + ".tex")
-Remove-Item ($RARC01 + ".aux")
-Remove-Item ($RARC01 + ".log")
-Remove-Item ($RARC01 + ".out")
-Move-Item -Path ("./" + $RARC01 + ".pdf") -Destination ("./RARC01/" + $RARC01 + ".pdf") -Force
+pdflatex $Assignment2.Spec
+Remove-Item ($Assignment2.Name + '.aux')
+Remove-Item ($Assignment2.Name + '.log')
+Remove-Item ($Assignment2.Name + '.out')
+Move-Item -Path ($Assignment2.Name + '.pdf') -Destination ($Assignment2.HomeDir + $Assignment2.Name + '.pdf') -Force
 
 
-pdflatex (".\Assignments\" + $RARC02 + ".tex")
-Remove-Item ($RARC02 + ".aux")
-Remove-Item ($RARC02 + ".log")
-Remove-Item ($RARC02 + ".out")
-Move-Item -Path ("./" + $RARC02 + ".pdf") -Destination ("./RARC02/" + $RARC02 + ".pdf") -Force
+pdflatex $Assignment3.Spec
+Remove-Item ($Assignment3.Name + '.aux')
+Remove-Item ($Assignment3.Name + '.log')
+Remove-Item ($Assignment3.Name + '.out')
+Move-Item -Path ($Assignment3.Name + '.pdf') -Destination ($Assignment3.HomeDir + $Assignment3.Name + '.pdf') -Force
 
 
-pdflatex (".\Assignments\" + $RARC03 + ".tex")
-Remove-Item ($RARC03 + ".aux")
-Remove-Item ($RARC03 + ".log")
-Remove-Item ($RARC03 + ".out")
-Move-Item -Path ("./" + $RARC03 + ".pdf") -Destination ("./RARC03/" + $RARC03 + ".pdf") -Force
+Remove-Item $Assignment1.Archive
+Remove-Item $Assignment2.Archive
+Remove-Item $Assignment3.Archive
 
 
-Remove-Item $RARC01Archive
-Remove-Item $RARC02Archive
-Remove-Item $RARC03Archive
+Compress-Archive $Assignment1.HomeDir $Assignment1.Archive -Update
+Compress-Archive $Assignment2.HomeDir $Assignment2.Archive -Update
+Compress-Archive $Assignment3.HomeDir $Assignment3.Archive -Update
 
-#
-Compress-Archive .\RARC01\ $RARC01Archive -Update
-#
-Compress-Archive .\RARC02\ $RARC02Archive -Update
-#
-Compress-Archive .\RARC03\ $RARC03Archive -Update
 
 
 Write-Host -NoNewLine 'Script Complete: Press any key to continue...';
