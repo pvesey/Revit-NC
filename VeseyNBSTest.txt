@@ -1,6 +1,0 @@
-Ac	Activities		
-Ac-05	Project management activities	Ac	
-Ac-05-00	Strategy stage activities	Ac-05	
-Ac-05-00-10	Business case development	Ac-05-00	
-Ac-05-00-80	Strategic brief preparation	Ac-05-00	
-Ac-05-00-82	Strategic brief submission	Ac-05-00	
