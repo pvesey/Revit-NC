@@ -50,15 +50,15 @@ $AssetLocation = './Assets/'
 $Sheet = 'LIT-A1-Metric-MEP.rfa'
 $ArchModel = 'RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt'
 
-
-
-
 # Cleanout folders
 Remove-Item ($Assignment1.HomeDir + '*.*')
 Remove-Item ($Assignment2.HomeDir + '*.*')
 Remove-Item ($Assignment3.HomeDir + '*.*')
 Remove-Item ($Assignment4.HomeDir + '*.*')
 Write-Host 'HomeDir Cleanout'
+Write-Progress -Activity "Compile in Progress" -Status "10% Complete:" -PercentComplete 10
+
+
 
 # Copy Items to Pack Folders
 
@@ -67,15 +67,22 @@ Copy-Item ($AssetLocation + $Sheet) ($Assignment2.HomeDir + $Sheet) -Force
 Copy-Item ($AssetLocation + $Sheet) ($Assignment3.HomeDir + $Sheet) -Force
 Copy-Item ($AssetLocation + $Sheet) ($Assignment4.HomeDir + $Sheet) -Force
 Write-Host 'A1 Sheet Copied to Packs'
+Write-Progress -Activity "Compile in Progress" -Status "15% Complete:" -PercentComplete 15
+
+
 
 Copy-Item ($AssetLocation + $ArchModel) ($Assignment1.HomeDir + $ArchModel) -Force
 Copy-Item ($AssetLocation + $ArchModel) ($Assignment2.HomeDir + $ArchModel) -Force
 Copy-Item ($AssetLocation + $ArchModel) ($Assignment3.HomeDir + $ArchModel) -Force
 Copy-Item ($AssetLocation + $ArchModel) ($Assignment4.HomeDir + $ArchModel) -Force
 Write-Host 'Arch Model Copied to Packs'
+Write-Progress -Activity "Compile in Progress" -Status "20% Complete:" -PercentComplete 20
+
+
 
 Copy-Item ($AssetLocation + $Assignment1.Dwg1Out) ($Assignment1.HomeDir + $Assignment1.Dwg1) -Force
 Write-Host 'RMEP01 Drawings Copied'
+Write-Progress -Activity "Compile in Progress" -Status "30% Complete:" -PercentComplete 30
 
 
 Copy-Item ($AssetLocation + $Assignment2.Dwg1Out) ($Assignment2.HomeDir + $Assignment2.Dwg1) -Force
@@ -83,12 +90,14 @@ Copy-Item ($AssetLocation + $Assignment2.Dwg2Out) ($Assignment2.HomeDir + $Assig
 Copy-Item ($AssetLocation + $Assignment2.Dwg3Out) ($Assignment2.HomeDir + $Assignment2.Dwg3) -Force
 Copy-Item ($AssetLocation + $Assignment2.Dwg4Out) ($Assignment2.HomeDir + $Assignment2.Dwg4) -Force
 Write-Host 'RMEP02 Drawings Copied'
+Write-Progress -Activity "Compile in Progress" -Status "35% Complete:" -PercentComplete 35
 
 
 Copy-Item ($AssetLocation + $Assignment3.Dwg1Out) ($Assignment3.HomeDir + $Assignment3.Dwg1) -Force
 Copy-Item ($AssetLocation + $Assignment3.Dwg2Out) ($Assignment3.HomeDir + $Assignment3.Dwg2) -Force
 Copy-Item ($AssetLocation + $Assignment3.Dwg3Out) ($Assignment3.HomeDir + $Assignment3.Dwg3) -Force
 Write-Host 'RMEP03 Drawings Copied'
+Write-Progress -Activity "Compile in Progress" -Status "40% Complete:" -PercentComplete 40
 
 
 
@@ -138,6 +147,6 @@ Compress-Archive $Assignment3.HomeDir $Assignment3.Archive -Update
 Compress-Archive $Assignment4.HomeDir $Assignment4.Archive -Update
 
 
-
-Write-Host -NoNewLine 'Press any key to continue...';
+Write-Progress -Activity "Compile in Progress" -Status "100% Complete:" -PercentComplete 100
+Write-Output -NoNewLine 'Press any key to continue...';
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
