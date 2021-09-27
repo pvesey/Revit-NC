@@ -30,8 +30,8 @@ $Assignment3 = [PSCustomObject]@{
     Archive = 'RMEP03-LIT-00-ZZ-IE-M-001-A1-P02.zip'
     Dwg1Out = 'RMEP03/RMEP03-M-101-A1-.pdf'
     Dwg1 = 'RMEP03-LIT-00-ZZ-DR-M-101-A1-P02.pdf'
-    Dwg2Out = 'RMEP03/RMEP03-M-103-A1-.pdf'
-    Dwg2 = 'RMEP03-LIT-00-ZZ-DR-M-103-A1-P02.pdf'
+    Dwg2Out = 'RMEP03/RMEP03-M-102-A1-.pdf'
+    Dwg2 = 'RMEP03-LIT-00-ZZ-DR-M-102-A1-P02.pdf'
     Dwg3Out = 'RMEP03/RMEP03-M-103-A1-.pdf'
     Dwg3 = 'RMEP03-LIT-00-ZZ-DR-M-103-A1-P02.pdf'
 }
