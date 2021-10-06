@@ -1,54 +1,54 @@
 $Assignment1 = [PSCustomObject]@{
-    Name = 'RMEP01-LIT-00-ZZ-SP-E-001-A1-P02'
-    Spec = './Assignments/RMEP01-LIT-00-ZZ-SP-E-001-A1-P02.tex'
+    Name = 'RMEP01-TUS-00-ZZ-SP-E-001-A1-P01'
+    Spec = './Assignments/RMEP01-TUS-00-ZZ-SP-E-001-A1-P01.tex'
     HomeDir = './RMEP01/'
-    Archive = 'RMEP01-LIT-00-ZZ-IE-E-001-A1-P02.zip'
+    Archive = 'RMEP01-TUS-00-ZZ-IE-E-001-A1-P01.zip'
     Dwg1Out = 'RMEP01/RMEP01-E-101-A1-.pdf'
-    Dwg1 = 'RMEP01-LIT-00-ZZ-DR-E-101-A1-P02.pdf'
+    Dwg1 = 'RMEP01-TUS-00-ZZ-DR-E-101-A1-P01.pdf'
 }
 
 $Assignment2 = [PSCustomObject]@{
-    Name = 'RMEP02-LIT-00-ZZ-SP-H-001-A1-P02'
-    Spec = './Assignments/RMEP02-LIT-00-ZZ-SP-H-001-A1-P02.tex'
+    Name = 'RMEP02-TUS-00-ZZ-SP-H-001-A1-P01'
+    Spec = './Assignments/RMEP02-TUS-00-ZZ-SP-H-001-A1-P01.tex'
     HomeDir = './RMEP02/'
-    Archive = 'RMEP02-LIT-00-ZZ-IE-H-001-A1-P02.zip'
+    Archive = 'RMEP02-TUS-00-ZZ-IE-H-001-A1-P01.zip'
     Dwg1Out = 'RMEP02/RMEP02-H-101-A1-.pdf'
-    Dwg1 = 'RMEP02-LIT-00-ZZ-DR-H-101-A1-P02.pdf'
+    Dwg1 = 'RMEP02-TUS-00-ZZ-DR-H-101-A1-P01.pdf'
     Dwg2Out = 'RMEP02/RMEP02-H-102-A1-.pdf'
-    Dwg2 = 'RMEP02-LIT-00-ZZ-DR-H-102-A1-P02.pdf'
+    Dwg2 = 'RMEP02-TUS-00-ZZ-DR-H-102-A1-P01.pdf'
     Dwg3Out = 'RMEP02/RMEP02-H-103-A1-.pdf'
-    Dwg3 = 'RMEP02-LIT-00-ZZ-DR-H-103-A1-P02.pdf'
+    Dwg3 = 'RMEP02-TUS-00-ZZ-DR-H-103-A1-P01.pdf'
     Dwg4Out = 'RMEP02/RMEP02-H-104-A1-.pdf'
-    Dwg4 = 'RMEP02-LIT-00-ZZ-DR-H-104-A1-P02.pdf'
+    Dwg4 = 'RMEP02-TUS-00-ZZ-DR-H-104-A1-P01.pdf'
 
 }
 
 $Assignment3 = [PSCustomObject]@{
-    Name = 'RMEP03-LIT-00-ZZ-SP-M-001-A1-P02'
-    Spec = './Assignments/RMEP03-LIT-00-ZZ-SP-M-001-A1-P02.tex'
+    Name = 'RMEP03-TUS-00-ZZ-SP-M-001-A1-P01'
+    Spec = './Assignments/RMEP03-TUS-00-ZZ-SP-M-001-A1-P01.tex'
     HomeDir = './RMEP03/'
-    Archive = 'RMEP03-LIT-00-ZZ-IE-M-001-A1-P02.zip'
+    Archive = 'RMEP03-TUS-00-ZZ-IE-M-001-A1-P01.zip'
     Dwg1Out = 'RMEP03/RMEP03-M-101-A1-.pdf'
-    Dwg1 = 'RMEP03-LIT-00-ZZ-DR-M-101-A1-P02.pdf'
+    Dwg1 = 'RMEP03-TUS-00-ZZ-DR-M-101-A1-P01.pdf'
     Dwg2Out = 'RMEP03/RMEP03-M-102-A1-.pdf'
-    Dwg2 = 'RMEP03-LIT-00-ZZ-DR-M-102-A1-P02.pdf'
+    Dwg2 = 'RMEP03-TUS-00-ZZ-DR-M-102-A1-P01.pdf'
     Dwg3Out = 'RMEP03/RMEP03-M-103-A1-.pdf'
-    Dwg3 = 'RMEP03-LIT-00-ZZ-DR-M-103-A1-P02.pdf'
+    Dwg3 = 'RMEP03-TUS-00-ZZ-DR-M-103-A1-P01.pdf'
 }
 
 $Assignment4 = [PSCustomObject]@{
-    Name = 'RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02'
-    Spec = './Assignments/RMEP04-LIT-00-ZZ-SP-Y-001-A1-P02.tex'
+    Name = 'RMEP04-TUS-00-ZZ-SP-Y-001-A1-P01'
+    Spec = './Assignments/RMEP04-TUS-00-ZZ-SP-Y-001-A1-P01.tex'
     HomeDir = './RMEP04/'
-    Archive = 'RMEP04-LIT-00-ZZ-IE-Y-001-A1-P02.zip'
+    Archive = 'RMEP04-TUS-00-ZZ-IE-Y-001-A1-P01.zip'
     Dwg1Out = 'RMEP04/RMEP01-Y-101-A1-.pdf'
-    Dwg1 = 'RMEP04-LIT-00-ZZ-DR-Y-101-A1-P02.pdf'
+    Dwg1 = 'RMEP04-TUS-00-ZZ-DR-Y-101-A1-P01.pdf'
 }
 
 
 $AssetLocation = './Assets/'
-$Sheet = 'LIT-A1-Metric-MEP.rfa'
-$ArchModel = 'RMEP01-LIT-00-ZZ-M3-A-001-A1-P02.rvt'
+$Sheet = 'TUS-A1-Metric-MEP.rfa'
+$ArchModel = 'RMEP01-TUS-00-ZZ-M3-A-001-A1-P01.rvt'
 
 # Cleanout folders
 Remove-Item ($Assignment1.HomeDir + '*.*')
