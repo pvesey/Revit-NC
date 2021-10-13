@@ -1,57 +1,58 @@
 $Assignment1 = [PSCustomObject]@{
-    Name = 'RARC01-LIT-00-ZZ-SP-A-001-A1-P02'
-    Spec = './Assignments/RARC01-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    Name = 'RARC01-TUS-00-ZZ-SP-A-001-A1-P01'
+    Spec = './Assignments/RARC01-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC01/'
-    Archive = 'RARC01-LIT-00-ZZ-IE-A-001-A1-P02.zip'
+    Archive = 'RARC01-TUS-00-ZZ-IE-A-001-A1-P01.zip'
     Dwg1Out = 'RARC01/RARC01-A-001-A1-.pdf'
-    Dwg1 = 'RARC01-LIT-00-ZZ-DR-A-001-A1-P02.pdf'
+    Dwg1 = 'RARC01-TUS-00-ZZ-DR-A-001-A1-P01.pdf'
     Dwg2Out = 'RARC01/RARC01-A-002-A1-.pdf'
-    Dwg2 = 'RARC01-LIT-00-ZZ-DR-A-002-A1-P02.pdf'
+    Dwg2 = 'RARC01-TUS-00-ZZ-DR-A-002-A1-P01.pdf'
     Dwg3Out = 'RARC01/RARC01-A-003-A1-.pdf'
-    Dwg3 = 'RARC01-LIT-00-ZZ-DR-A-003-A1-P02.pdf'
+    Dwg3 = 'RARC01-TUS-00-ZZ-DR-A-003-A1-P01.pdf'
     Dwg4Out = 'RARC01/RARC01-A-004-A1-.pdf'
-    Dwg4 = 'RARC01-LIT-00-ZZ-DR-A-004-A1-P02.pdf'
+    Dwg4 = 'RARC01-TUS-00-ZZ-DR-A-004-A1-P01.pdf'
     Dwg5Out = 'RARC01/RARC01-A-005-A1-.pdf'
-    Dwg5 = 'RARC01-LIT-00-ZZ-DR-A-005-A1-P02.pdf'
+    Dwg5 = 'RARC01-TUS-00-ZZ-DR-A-005-A1-P01.pdf'
 }
 
 $Assignment2 = [PSCustomObject]@{
-    Name = 'RARC02-LIT-00-ZZ-SP-A-001-A1-P02'
-    Spec = './Assignments/RARC02-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    Name = 'RARC02-TUS-00-ZZ-SP-A-001-A1-P01'
+    Spec = './Assignments/RARC02-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC02/'
-    Archive = 'RARC02-LIT-00-ZZ-IE-A-001-A1-P02.zip'
-    Dwg1Out = 'RARC02/RARC02-A-201-A1-.pdf'
-    Dwg1 = 'RARC02-LIT-00-ZZ-DR-A-201-A1-P02.pdf'
-    Dwg2Out = 'RARC02/RARC02-A-202-A1-.pdf'
-    Dwg2 = 'RARC02-LIT-00-ZZ-DR-A-202-A1-P02.pdf'
-    Dwg3Out = 'RARC02/RARC02-A-203-A1-.pdf'
-    Dwg3 = 'RARC02-LIT-00-ZZ-DR-A-203-A1-P02.pdf'
-    Dwg4Out = 'RARC02/RARC02-A-204-A1-.pdf'
-    Dwg4 = 'RARC02-LIT-00-ZZ-DR-A-204-A1-P02.pdf'
-    Dwg5Out = 'RARC02/RARC02-A-205-A1-.pdf'
-    Dwg5 = 'RARC02-LIT-00-ZZ-DR-A-205-A1-P02.pdf'
-    Dwg6Out = 'RARC02/RARC02-A-206-A1-.pdf'
-    Dwg6 = 'RARC02-LIT-00-ZZ-DR-A-206-A1-P02.pdf'
+    Archive = 'RARC02-TUS-00-ZZ-IE-A-001-A1-P01.zip'
+    Dwg1Out = 'RARC02/RARC02-A-001-A1-.pdf'
+    Dwg1 = 'RARC02-TUS-00-ZZ-DR-A-201-A1-P01.pdf'
+    Dwg2Out = 'RARC02/RARC02-A-002-A1-.pdf'
+    Dwg2 = 'RARC02-TUS-00-ZZ-DR-A-202-A1-P01.pdf'
+    Dwg3Out = 'RARC02/RARC02-A-003-A1-.pdf'
+    Dwg3 = 'RARC02-TUS-00-ZZ-DR-A-203-A1-P01.pdf'
+    Dwg4Out = 'RARC02/RARC02-A-004-A1-.pdf'
+    Dwg4 = 'RARC02-TUS-00-ZZ-DR-A-204-A1-P01.pdf'
+    Dwg5Out = 'RARC02/RARC02-A-005-A1-.pdf'
+    Dwg5 = 'RARC02-TUS-00-ZZ-DR-A-205-A1-P01.pdf'
+    Dwg6Out = 'RARC02/RARC02-A-006-A1-.pdf'
+    Dwg6 = 'RARC02-TUS-00-ZZ-DR-A-206-A1-P01.pdf'
 }
 
 
 
 $Assignment3 = [PSCustomObject]@{
-    Name = 'RARC03-LIT-00-ZZ-SP-A-001-A1-P02'
-    Spec = './Assignments/RARC03-LIT-00-ZZ-SP-A-001-A1-P02.tex'
+    Name = 'RARC03-TUS-00-ZZ-SP-A-001-A1-P01'
+    Spec = './Assignments/RARC03-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC03/'
-    Archive = 'RARC03-LIT-00-ZZ-IE-A-001-A1-P02.zip'
+    Archive = 'RARC03-TUS-00-ZZ-IE-A-001-A1-P01.zip'
     Dwg1Out = 'RARC03/RARC03-M-101-A1-.pdf'
-    Dwg1 = 'RARC03-LIT-00-ZZ-DR-A-101-A1-P02.pdf'
+    Dwg1 = 'RARC03-TUS-00-ZZ-DR-A-101-A1-P01.pdf'
     Dwg2Out = 'RARC03/RARC03-A-103-A1-.pdf'
-    Dwg2 = 'RARC03-LIT-00-ZZ-DR-A-103-A1-P02.pdf'
+    Dwg2 = 'RARC03-TUS-00-ZZ-DR-A-103-A1-P01.pdf'
     Dwg3Out = 'RARC03/RARC03-A-103-A1-.pdf'
-    Dwg3 = 'RARC03-LIT-00-ZZ-DR-A-103-A1-P02.pdf'
+    Dwg3 = 'RARC03-TUS-00-ZZ-DR-A-103-A1-P01.pdf'
 }
 
 
 $AssetLocation = './Assets/'
-$Sheet = 'LIT-A1-Metric-Arch.rfa'
+$A1Sheet = 'TUS-A1-Metric-Arch.rfa'
+$A4Sheet = 'TUS_A4_Metric.rfa'
 
 # Cleanout folders
 Remove-Item ($Assignment1.HomeDir + '*.*')
@@ -61,10 +62,12 @@ Write-Host 'HomeDir Cleanout'
 
 # Copy Items to Pack Folders
 
-Copy-Item ($AssetLocation + $Sheet) ($Assignment1.HomeDir + $Sheet) -Force
-Copy-Item ($AssetLocation + $Sheet) ($Assignment2.HomeDir + $Sheet) -Force
-Copy-Item ($AssetLocation + $Sheet) ($Assignment3.HomeDir + $Sheet) -Force
-Copy-Item ($AssetLocation + $Sheet) ($Assignment4.HomeDir + $Sheet) -Force
+Copy-Item ($AssetLocation + $A1Sheet) ($Assignment1.HomeDir + $A1Sheet) -Force
+Copy-Item ($AssetLocation + $A1Sheet) ($Assignment2.HomeDir + $A1Sheet) -Force
+Copy-Item ($AssetLocation + $A1Sheet) ($Assignment3.HomeDir + $A1Sheet) -Force
+Copy-Item ($AssetLocation + $A4Sheet) ($Assignment1.HomeDir + $A4Sheet) -Force
+Copy-Item ($AssetLocation + $A4Sheet) ($Assignment2.HomeDir + $A4Sheet) -Force
+Copy-Item ($AssetLocation + $A4Sheet) ($Assignment3.HomeDir + $A4Sheet) -Force
 Write-Host 'A1 Sheet Copied to Packs'
 
 Copy-Item ($AssetLocation + $Assignment1.Dwg1Out) ($Assignment1.HomeDir + $Assignment1.Dwg1) -Force
