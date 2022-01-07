@@ -1,6 +1,6 @@
 $Assignment1 = [PSCustomObject]@{
     Name = 'RARC01-TUS-00-ZZ-SP-A-001-A1-P01'
-    Spec = './Assignments/RARC01-TUS-00-ZZ-SP-A-001-A1-P01.tex'
+    Spec = './SP/RARC01-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC01/'
     Archive = 'RARC01-TUS-00-ZZ-IE-A-001-A1-P01.zip'
     Dwg1Out = 'RARC01/RARC01-A-001-A1-.pdf'
@@ -17,7 +17,7 @@ $Assignment1 = [PSCustomObject]@{
 
 $Assignment2 = [PSCustomObject]@{
     Name = 'RARC02-TUS-00-ZZ-SP-A-001-A1-P01'
-    Spec = './Assignments/RARC02-TUS-00-ZZ-SP-A-001-A1-P01.tex'
+    Spec = './SP/RARC02-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC02/'
     Archive = 'RARC02-TUS-00-ZZ-IE-A-001-A1-P01.zip'
     Dwg1Out = 'RARC02/RARC02-A-001-A1-.pdf'
@@ -38,7 +38,7 @@ $Assignment2 = [PSCustomObject]@{
 
 $Assignment3 = [PSCustomObject]@{
     Name = 'RARC03-TUS-00-ZZ-SP-A-001-A1-P01'
-    Spec = './Assignments/RARC03-TUS-00-ZZ-SP-A-001-A1-P01.tex'
+    Spec = './SP/RARC03-TUS-00-ZZ-SP-A-001-A1-P01.tex'
     HomeDir = './RARC03/'
     Archive = 'RARC03-TUS-00-ZZ-IE-A-001-A1-P01.zip'
     Dwg1Out = 'RARC03/RARC03-M-101-A1-.pdf'
@@ -50,7 +50,7 @@ $Assignment3 = [PSCustomObject]@{
 }
 
 
-$AssetLocation = './Assets/'
+$AssetLocation = './M3-DR/'
 $A1Sheet = 'TUS-A1-Metric-Arch.rfa'
 $A4Sheet = 'TUS_A4_Metric.rfa'
 
@@ -86,9 +86,9 @@ Copy-Item ($AssetLocation + $Assignment2.Dwg6Out) ($Assignment2.HomeDir + $Assig
 Write-Host 'RARC02 Drawings Copied'
 
 
-Copy-Item ($AssetLocation + $Assignment3.Dwg1Out) ($Assignment3.HomeDir + $Assignment3.Dwg1) -Force
-Copy-Item ($AssetLocation + $Assignment3.Dwg2Out) ($Assignment3.HomeDir + $Assignment3.Dwg2) -Force
-Copy-Item ($AssetLocation + $Assignment3.Dwg3Out) ($Assignment3.HomeDir + $Assignment3.Dwg3) -Force
+#Copy-Item ($AssetLocation + $Assignment3.Dwg1Out) ($Assignment3.HomeDir + $Assignment3.Dwg1) -Force
+#Copy-Item ($AssetLocation + $Assignment3.Dwg2Out) ($Assignment3.HomeDir + $Assignment3.Dwg2) -Force
+#Copy-Item ($AssetLocation + $Assignment3.Dwg3Out) ($Assignment3.HomeDir + $Assignment3.Dwg3) -Force
 Write-Host 'RARC03 Drawings Copied'
 
 

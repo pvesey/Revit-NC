@@ -1,0 +1,70 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{pgf}
+\usepackage{eurosym}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{pxfonts}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{currfile}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=true,     % window fit to page when opened
+    pdftitle={Assessments},    % title
+    pdfauthor={Paul Vesey},     % author
+    pdfsubject={Building Information Modelling },   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={xelatex}, % producer of the document
+    pdfkeywords={'Graphics' }, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=violet,          % color of internal links (change box color with linkbordercolor)
+    citecolor=magenta,        % color of links to bibliography
+    filecolor=red,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\setlength\parindent{0pt}
+\begin{document}
+
+\lstset{language=HTML,
+				basicstyle=\small,
+				breaklines=true,
+        numbers=left,
+        numberstyle=\tiny,
+        showstringspaces=false,
+        aboveskip=-20pt,
+        frame=leftline
+        }
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{./SP/img/TUSlogo}
+\end{figure}
+
+
+\begin{tabularx}{\textwidth}{ |l|X| }
+	\hline
+	
+	\textbf{Subject:} & CADD06018: BIM with Revit Architecture\\
+	\textbf{Course:} & Revit Architecture Online\\
+	\textbf{Session:} & Spring 2022\\
+	\textbf{Lecturer:} & Paul Vesey \footnotesize{BEng, MIE, HDip}\\
+	\textbf{Filename:} & \currfilebase\\
+	\hline
+\end{tabularx}
