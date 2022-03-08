@@ -47,7 +47,7 @@ $Assignment4 = [PSCustomObject]@{
 
 
 $AssetLocation = './M3-DR/'
-$Sheet = 'TUS-A1-Metric-MEP.rfa'
+$Sheet = 'RMEPXX-TUS-XX-XX-DR-A-Zz_10-001-P01.rfa'
 $ArchModel = 'RMEP01-TUS-00-ZZ-M3-A-001-A1-P01.rvt'
 
 # Cleanout folders
