@@ -37,10 +37,10 @@ $Assignment3 = [PSCustomObject]@{
 }
 
 $Assignment4 = [PSCustomObject]@{
-    Name = 'RMEP04-TUS-00-ZZ-SP-Y-001-A1-P01'
-    Spec = './SP/RMEP04-TUS-00-ZZ-SP-Y-001-A1-P01.tex'
+    Name = 'RMEP04-TUS-00-ZZ-SP-Y-001-A1-P02'
+    Spec = './SP/RMEP04-TUS-00-ZZ-SP-Y-001-A1-P02.tex'
     HomeDir = './RMEP04/'
-    Archive = 'RMEP04-TUS-00-ZZ-IE-Y-001-A1-P01.zip'
+    Archive = 'RMEP04-TUS-00-ZZ-IE-Y-001-A1-P02.zip'
     Dwg1Out = 'RMEP04/RMEP01-Y-101-A1-.pdf'
     Dwg1 = 'RMEP04-TUS-00-ZZ-DR-Y-101-A1-P01.pdf'
 }
