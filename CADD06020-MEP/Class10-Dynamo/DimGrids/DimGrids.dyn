@@ -1,0 +1,166 @@
+{
+  "Uuid": "e036f8d7-dad8-44b7-912e-2f3d7f36b4b9",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "DimGrids",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementTypes, DSRevitNodesUI",
+      "SelectedIndex": 149,
+      "SelectedString": "Grid",
+      "NodeType": "ExtensionNode",
+      "Id": "3aa63953471b4f91ba545772f7d9ba6b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "627a46617b26490f9305c86d929237af",
+          "Name": "Types",
+          "Description": "The selected Types",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All element subtypes."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfType, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "21fd7f049e9c43cda8450c60142d9ad7",
+      "Inputs": [
+        {
+          "Id": "72e6a2447d62448bb299123aec6da9ca",
+          "Name": "element type",
+          "Description": "An element type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "dc45dff6f74b490fbd85bfbb8c0c1c7e",
+          "Name": "elements",
+          "Description": "All elements in the active document of a given type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All elements in the active document of a given type."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Grid.Curve",
+      "Id": "3265ae0cd93f46deb236d113955fd578",
+      "Inputs": [
+        {
+          "Id": "dcb0b6a19b19490087b5641846c8593a",
+          "Name": "grid",
+          "Description": "Revit.Elements.Grid",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c01bd798b0b74ad3aca2cecf68b78fc0",
+          "Name": "Curve",
+          "Description": "Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the underlying Curve geometry from this Element\n\nGrid.Curve: Curve"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "627a46617b26490f9305c86d929237af",
+      "End": "72e6a2447d62448bb299123aec6da9ca",
+      "Id": "489b6e2972c94eda8736380e5fdb6a4c"
+    },
+    {
+      "Start": "dc45dff6f74b490fbd85bfbb8c0c1c7e",
+      "End": "dcb0b6a19b19490087b5641846c8593a",
+      "Id": "05827c57ba254a76b30dbc2ece2bec41"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Element Types",
+        "Id": "3aa63953471b4f91ba545772f7d9ba6b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 230.0,
+        "Y": 156.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Type",
+        "Id": "21fd7f049e9c43cda8450c60142d9ad7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 493.0,
+        "Y": 148.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Grid.Curve",
+        "Id": "3265ae0cd93f46deb236d113955fd578",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 699.0,
+        "Y": 289.0
+      }
+    ],
+    "Annotations": [],
+    "X": 155.49799366428215,
+    "Y": 101.66552398549339,
+    "Zoom": 0.80821986639302934
+  }
+}

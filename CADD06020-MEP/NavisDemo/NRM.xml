@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Takeoff xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://download.autodesk.com/us/navisworks/schemas/nw-TakeoffCatalog-10.0.xsd">
+	<Catalog>
+		<ItemGroup Name="Facilitating works" WBS="0" CatalogId="605a1f4b-83a2-4dd8-83c9-1781a5df38d9">
+			<ItemGroup Name="Toxic/hazardous/contaminated material treatment" WBS="1" CatalogId="8ce8c537-c0e3-4056-a079-a5b3113b5264" />
+			<ItemGroup Name="Major demolition works" WBS="2" CatalogId="a3973720-a579-4a54-abd8-54f07d828117" />
+			<ItemGroup Name="Temporary support to adjacent structures" WBS="3" CatalogId="b6a9c1b9-6828-4854-bae6-ac3e242f0101" />
+			<ItemGroup Name="Specialist groundworks" WBS="4" CatalogId="851b5827-6ecf-4048-8f31-6982bfd2e518" />
+			<ItemGroup Name="Temporary diversion works" WBS="5" CatalogId="92e07b20-4098-45c5-b04c-3ce0719bd872" />
+			<ItemGroup Name="Extraordinary site investigation works" WBS="6" CatalogId="42a7984c-f5df-4b84-b82e-718a98408385" />
+		</ItemGroup>
+		<ItemGroup Name="Substructure" WBS="1" CatalogId="d9847468-4dd5-4888-a468-3184291b3489">
+			<ItemGroup Name="Substructure" WBS="1" CatalogId="eae085b9-ac75-4112-9e93-df611e133061">
+				<ItemGroup Name="Standard Foundations" WBS="1" CatalogId="7332367d-ee91-4132-a727-3038c558f02b" />
+				<ItemGroup Name="Specialist Foundations" WBS="2" CatalogId="8c7ef65f-b4ce-41bf-8064-8a30305a7c81" />
+				<ItemGroup Name="Lowest Floor Construction" WBS="3" CatalogId="f1bb8951-bfbc-4674-b92e-d58d89e3e990" />
+				<ItemGroup Name="Basement Excavation" WBS="4" CatalogId="4287d086-19a5-4edd-b87e-94fb014a29b0" />
+				<ItemGroup Name="Basement Retaining Walls" WBS="5" CatalogId="13d57b4a-7781-43c7-a86c-0b58e14b2a58" />
+			</ItemGroup>
+		</ItemGroup>
+		<ItemGroup Name="Superstructure" WBS="2" CatalogId="9079dba2-a473-4111-87e7-10909ac34b10">
+			<ItemGroup Name="Frame" WBS="1" CatalogId="d6fb8480-1462-4e04-8f6f-a0dc62e3082d" />
+			<ItemGroup Name="Upper Floors" WBS="2" CatalogId="6c3a3344-6857-4cdc-9696-0cad1e3cc0a0" />
+			<ItemGroup Name="Roof" WBS="3" CatalogId="5d152ee7-f775-45d7-9f2d-8ca5c974b8d7" />
+			<ItemGroup Name="Stairs and Ramps" WBS="4" CatalogId="25943794-2da5-4154-ad0f-205fc9cf6b7c" />
+			<ItemGroup Name="External Walls" WBS="5" CatalogId="3be49318-a802-4a16-b1bd-80fd226dd917" />
+			<ItemGroup Name="Windows and External Doors" WBS="6" CatalogId="64cb9860-1d08-4045-b8b5-3d8ba7053d55" />
+			<ItemGroup Name="Internal Walls and Partitions" WBS="7" CatalogId="b8846a91-581d-45f4-b16d-bce46081f596" />
+			<ItemGroup Name="Internal doors" WBS="8" CatalogId="87751264-9bc7-46e1-97e5-02ebfc751b59" />
+		</ItemGroup>
+		<ItemGroup Name="Internal Finishes" WBS="3" CatalogId="59a7b4da-acc4-4141-b7ff-5c91d3b72b45">
+			<ItemGroup Name="Wall finishes" WBS="1" CatalogId="4ef0fe28-a238-4a84-8e27-cf988bb162fa" />
+			<ItemGroup Name="Floor finishes" WBS="2" CatalogId="25a9b6a2-8a29-4dd0-bac3-90f870fa8978" />
+			<ItemGroup Name="Ceiling finishes" WBS="3" CatalogId="8311999c-b44c-4fc0-a46f-9b05aeeaba81" />
+		</ItemGroup>
+		<ItemGroup Name="Fittings, furnishings and equipment" WBS="4" CatalogId="a963439f-ca9c-4dc3-beec-f83547007c12">
+			<ItemGroup Name="Fittings, furnishings and equipment" WBS="1" CatalogId="e5215a9b-d3c1-4fa3-bb6f-847ad9397790" />
+		</ItemGroup>
+		<ItemGroup Name="Services" WBS="5" CatalogId="53d06e30-6b8a-4706-98f3-e753a29bf777">
+			<ItemGroup Name="Sanitary installations" WBS="1" CatalogId="373d4625-f228-4841-8dc3-c7dae3c426b2" />
+			<ItemGroup Name="Services equipment" WBS="2" CatalogId="5a3a22be-6b22-4736-b42a-c48aa96a7f35" />
+			<ItemGroup Name="Disposal installations" WBS="3" CatalogId="a264b3bb-f7ff-49b7-be34-89a9fd4e89a2" />
+			<ItemGroup Name="Water installations" WBS="4" CatalogId="4e32bd3e-bd83-43bb-8471-5fb6e8ec088e" />
+			<ItemGroup Name="Heat source" WBS="5" CatalogId="4929e670-7bfe-40fd-8bad-ff3c0523a989" />
+			<ItemGroup Name="Space heating and air conditioning" WBS="6" CatalogId="50deed5a-ed41-4cc9-b557-86b3879740b9" />
+			<ItemGroup Name="Ventilation" WBS="7" CatalogId="4bce1eac-3ade-4a88-8cd5-6aade59d7018" />
+			<ItemGroup Name="Electrical installations" WBS="8" CatalogId="5586cbac-4490-477b-85c3-06b528d1e0a9" />
+			<ItemGroup Name="Fuel installations" WBS="9" CatalogId="aac6d3f5-4da8-42fe-87ee-91087bed30ec" />
+			<ItemGroup Name="Lift and conveyor installations" WBS="10" CatalogId="3299033c-8763-4a8c-9d4c-cd8d12db8b0d" />
+			<ItemGroup Name="Fire and lightning protection" WBS="11" CatalogId="78807e78-0692-47ed-81b0-12cfc3b7fd63" />
+			<ItemGroup Name="Communication, security and control systems" WBS="12" CatalogId="6c247398-a3ae-41a8-bc7f-e7bbdbdb5727" />
+			<ItemGroup Name="Specialist installations" WBS="13" CatalogId="92124c65-89d7-4262-b970-b1dda36d7b56" />
+			<ItemGroup Name="Builder’s work in connection with services" WBS="14" CatalogId="01bd39f4-c322-484c-ad07-f00465d4bad2" />
+		</ItemGroup>
+		<ItemGroup Name="Prefabricated buildings and building units" WBS="6" CatalogId="d26fdf06-7197-49c7-b090-989c540fc3d1">
+			<ItemGroup Name="Prefabricated buildings and building units" WBS="1" CatalogId="26cb29a8-2320-4c51-af31-70c6905ccda3" />
+		</ItemGroup>
+		<ItemGroup Name="Work to Existing Buildings" WBS="7" CatalogId="921e5070-d0e4-48a0-b1aa-392d54f66599">
+			<ItemGroup Name="Minor demolition works and alteration works" WBS="1" CatalogId="f897fb67-4ab3-4df7-8386-d78fdb8c6fa3" />
+			<ItemGroup Name="Repairs to existing services" WBS="2" CatalogId="ebd5a0f4-3074-4a0a-b784-dd9658a5d870" />
+			<ItemGroup Name="Damp-proof courses/fungus and beetle eradication" WBS="3" CatalogId="df1e74b6-8e57-41f9-b3fd-337580e2d442" />
+			<ItemGroup Name="Facade retention" WBS="4" CatalogId="f2fa3d0d-37cb-4a6f-9579-633bbcd0fdde" />
+			<ItemGroup Name="Cleaning existing surfaces" WBS="5" CatalogId="1db8211c-5d1b-424e-a912-51d35e3e9e21" />
+			<ItemGroup Name="Renovation works" WBS="6" CatalogId="27e8935e-c7ee-461c-afd1-769748a2f7e1" />
+		</ItemGroup>
+		<ItemGroup Name="External Works" WBS="8" CatalogId="d478f90a-27f6-4b49-a7b4-7aaa38527b96">
+			<ItemGroup Name="Site preparation works" WBS="1" CatalogId="b0a79099-c94e-4b5e-b17a-361c5d52ea84" />
+			<ItemGroup Name="Roads, paths, pavings and surfacings" WBS="2" CatalogId="0332e290-407c-4324-84f6-1b603420f9ad" />
+			<ItemGroup Name="Soft landscaping, planting and irrigation systems" WBS="3" CatalogId="93fcb71c-6bab-4b55-ab4f-566fa028489d" />
+			<ItemGroup Name="Fencing, railings and walls" WBS="4" CatalogId="e24e6b7a-9d34-4aed-8b96-e60257272283" />
+			<ItemGroup Name="External fixtures" WBS="5" CatalogId="26757bf2-f63d-465b-addd-a5337e2a819e" />
+			<ItemGroup Name="External drainage" WBS="6" CatalogId="e065fa62-f7c7-4cf3-98fa-4fc6dbf341b7" />
+			<ItemGroup Name="External services" WBS="7" CatalogId="43f3e7a8-7867-440c-a905-1a23713d696a" />
+			<ItemGroup Name="Minor building works and ancillary buildings" WBS="8" CatalogId="3ce67652-4894-4556-bcc8-8e269354a1a0" />
+		</ItemGroup>
+	</Catalog>
+	<ConfigFile>
+		<Workbook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.autodesk.com/us/navisworks/schemas/nw-TakeoffConfiguration-10.0.xsd" xmlns="">
+			<GlobalConfiguration>
+				<ConfigureFileType>ItemResources</ConfigureFileType>
+				<UnitsSystem>Metric</UnitsSystem>
+				<Currency>
+					<Name></Name>
+					<Code></Code>
+					<Symbol></Symbol>
+				</Currency>
+				<Column Name="Object">
+					<Type>String</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="any"></Units>
+				</Column>
+				<Column Name="ModelLength">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="length">meter</Units>
+				</Column>
+				<Column Name="ModelWidth">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="length">meter</Units>
+				</Column>
+				<Column Name="ModelThickness">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="length">meter</Units>
+				</Column>
+				<Column Name="ModelHeight">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="length">meter</Units>
+				</Column>
+				<Column Name="ModelPerimeter">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="length">meter</Units>
+				</Column>
+				<Column Name="ModelArea">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="area">squaremeter</Units>
+				</Column>
+				<Column Name="ModelVolume">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="volume">cubicmeter</Units>
+				</Column>
+				<Column Name="ModelWeight">
+					<Type>Number</Type>
+					<Purpose>Input</Purpose>
+					<Formula varies="0"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="weight">kilogram</Units>
+				</Column>
+				<Column Name="Length">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelLength</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="length">meter</Units>
+				</Column>
+				<Column Name="Width">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelWidth</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="length">meter</Units>
+				</Column>
+				<Column Name="Thickness">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelThickness</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="length">meter</Units>
+				</Column>
+				<Column Name="Height">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelHeight</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="length">meter</Units>
+				</Column>
+				<Column Name="Perimeter">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelPerimeter</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="length">meter</Units>
+				</Column>
+				<Column Name="Area">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelArea</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="area">squaremeter</Units>
+				</Column>
+				<Column Name="Volume">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelVolume</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="volume">cubicmeter</Units>
+				</Column>
+				<Column Name="Weight">
+					<Type>Number</Type>
+					<Purpose>Calculation</Purpose>
+					<Formula varies="1">=ModelWeight</Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="weight">kilogram</Units>
+				</Column>
+				<Column Name="Count">
+					<Type>Number</Type>
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="0" group="any">count</Units>
+				</Column>
+				<Column Name="PrimaryQuantity">
+					<Type>Number</Type>
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Value varies="1"></Value>
+					<Units varies="1" group="any"></Units>
+				</Column>
+			</GlobalConfiguration>
+			<Table Name="ObjectResource">
+				<ColumnRef Name="Object" />
+				<ColumnRef Name="ModelLength" />
+				<ColumnRef Name="ModelWidth" />
+				<ColumnRef Name="ModelThickness" />
+				<ColumnRef Name="ModelHeight" />
+				<ColumnRef Name="ModelPerimeter" />
+				<ColumnRef Name="ModelArea" />
+				<ColumnRef Name="ModelVolume" />
+				<ColumnRef Name="ModelWeight" />
+				<ColumnRef Name="Length">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="area"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="volume"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="weight"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Count">
+					<Purpose>Calculation</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="PrimaryQuantity">
+					<Purpose>Calculation</Purpose>
+				</ColumnRef>
+			</Table>
+			<Table Name="StepResource">
+				<ColumnRef Name="Length">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="area"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="volume"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Purpose>RollUp</Purpose>
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="weight"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Count" />
+				<ColumnRef Name="PrimaryQuantity" />
+			</Table>
+			<Table Name="ObjectStep">
+				<ColumnRef Name="Object" />
+				<ColumnRef Name="ModelLength" />
+				<ColumnRef Name="ModelWidth" />
+				<ColumnRef Name="ModelThickness" />
+				<ColumnRef Name="ModelHeight" />
+				<ColumnRef Name="ModelPerimeter" />
+				<ColumnRef Name="ModelArea" />
+				<ColumnRef Name="ModelVolume" />
+				<ColumnRef Name="ModelWeight" />
+				<ColumnRef Name="Length">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="area"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="volume"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="weight"></Units>
+				</ColumnRef>
+			</Table>
+			<Table Name="Step">
+				<ColumnRef Name="Length">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+			</Table>
+			<Table Name="Object">
+				<ColumnRef Name="Object" />
+				<ColumnRef Name="ModelLength" />
+				<ColumnRef Name="ModelWidth" />
+				<ColumnRef Name="ModelThickness" />
+				<ColumnRef Name="ModelHeight" />
+				<ColumnRef Name="ModelPerimeter" />
+				<ColumnRef Name="ModelArea" />
+				<ColumnRef Name="ModelVolume" />
+				<ColumnRef Name="ModelWeight" />
+				<ColumnRef Name="Length">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="length"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="area"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="volume"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Formula varies="1"></Formula>
+					<Units varies="1" group="weight"></Units>
+				</ColumnRef>
+				<ColumnRef Name="Count">
+					<Purpose>Calculation</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="PrimaryQuantity">
+					<Purpose>Calculation</Purpose>
+				</ColumnRef>
+			</Table>
+			<Table Name="Item">
+				<ColumnRef Name="Length">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Count">
+					<Formula varies="1">=1</Formula>
+				</ColumnRef>
+				<ColumnRef Name="PrimaryQuantity" />
+			</Table>
+			<Table Name="ItemGroup" />
+			<Table Name="Resource">
+				<ColumnRef Name="Length">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Width">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Thickness">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Height">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Perimeter">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Area">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Volume">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Weight">
+					<Purpose>RollUp</Purpose>
+				</ColumnRef>
+				<ColumnRef Name="Count">
+					<Formula varies="1">=1</Formula>
+				</ColumnRef>
+				<ColumnRef Name="PrimaryQuantity" />
+			</Table>
+			<Table Name="ResourceGroup" />
+		</Workbook>
+	</ConfigFile>
+</Takeoff>
